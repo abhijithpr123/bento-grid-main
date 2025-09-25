@@ -3,6 +3,15 @@
     padding: 0%;
     box-sizing: border-box;
 }
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('fonts/custom-font.ttf') format('truetype');
+}
+
+body {
+    font-family: 'MyCustomFont', sans-serif;
+}
+
 .main{
     padding:30px 20% 10px 20% ;
 }
@@ -202,12 +211,24 @@
     }
 }
 
-@media screen and (min-width:425px) and (max-width:768px) {
+@media screen and (min-width:425px) and (max-width:788px) {
     .main{
         padding: 30px 20px 10px 20px;
     }
     .inner{
-        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .main{
+        padding: 30px 20px 10px 20px;
+    }
+    .container8{
+        flex-direction: column;
+        text-align: center;
+    }
+    .container3 img{
+        right: 0px;
+        width: 100%;
     }
     
 }
